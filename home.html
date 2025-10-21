@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alla Modding</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:white;">
+  <div class="topbar">
+    <!-- Logga i mitten -->
+    <img src="din-logga.png" alt="Logga" class="logo">
+
+    <!-- Knapp med logga i högra hörnet -->
+    <button class="link-btn" onclick="window.location.href='https://discord.gg/nfExTuxZMR'">
+      <img src="ikon.png" alt="Knapp-logga">
+    </button>
+  </div>
+
+  <script>
+    // Kolla om användaren är inloggad
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
